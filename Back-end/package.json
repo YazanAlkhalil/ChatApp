@@ -1,0 +1,15 @@
+{
+  "author": "Yazan Alkhalil",
+  "name": "nodejs sandbox",
+  "main": "server.js",
+  "description": "a sandbox for testing nodejs",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.6.0",
+    "mongoose": "^8.3.0",
+    "nodemon": "^3.1.0"
+  }
+}
