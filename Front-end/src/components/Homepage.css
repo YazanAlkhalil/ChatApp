@@ -1,0 +1,17 @@
+.homepage{
+    margin: 20px ;
+}
+
+div.chat{
+    margin-bottom: 20px;
+    font-size: 40px;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+div.chat:hover{
+    cursor: pointer;
+    background-color: rgba(250, 235, 215, 0.775);
+}
+.css-b62m3t-container{
+    margin-bottom: 20px;
+}

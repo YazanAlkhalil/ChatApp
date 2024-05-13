@@ -1,0 +1,59 @@
+/* RegisterPage.css */
+body{
+    background-image: url('../../public/images/istockphoto-1372399516-2048x2048.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.register-container {
+    background-color: white;
+    width: 300px;
+    margin: 130px auto 0;
+    padding: 20px 30px 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4c61af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #4c61afb4;
+  }
+  
+  a {
+    color: #4c61af;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }

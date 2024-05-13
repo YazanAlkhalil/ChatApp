@@ -1,0 +1,38 @@
+.chatpage{
+    margin: 20px;
+}
+.to{
+    word-break: break-all;
+    word-wrap: wrap;
+    border-radius: 20px;
+    margin: 20px 50% 20px 0;
+    background-color: gray;
+    padding: 20px;
+    color: white;
+}
+.from{
+    word-break: break-all;
+    border-radius: 20px;
+    margin: 20px 20px 20px 50%;
+    background-color: rgb(62, 28, 130);
+    padding: 20px;
+    color: white;
+
+}
+.input{
+    display: flex;
+}
+.input input{
+    width: 70%;
+    height: 40px;
+    position: fixed;
+    bottom: 4px;
+}
+.input button{
+    width: 25%;
+    position: fixed;
+    height: 58px;
+    font-size: 20px;
+    bottom: 4px;
+    right: 20px;
+}

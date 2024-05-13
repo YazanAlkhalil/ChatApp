@@ -1,33 +1,36 @@
 import React, { useContext, useState } from 'react';
 import './Register.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { TokenContext } from './TokenProvider';
 const Register = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const {setToken} = useContext(TokenContext)
-
-  const handleRegister =async () => {
-
-    const res = await fetch("http://localhost:3000/api/auth/register",{
+  const navigate = useNavigate();
+  const handleLogin = async () => {
+    const res = await fetch("http://localhost:3000/api/auth/login",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
       },
-      body: JSON.stringify({
+      body:JSON.stringify({
         username,
         password
       })
     })
     if(res.ok){
       const data = await res.json()
-      alert("user created")
+      setToken(data.token)
+      navigate("/homepage")
+    }
+    else{
+      alert("incorrect credentials")
     }
   };
 
   return (
     <div className="register-container">
-      <h2>Register</h2>
+      <h2>Login</h2>
       <div className="form-group">
         <label htmlFor="name">Name:</label>
         <input
@@ -48,9 +51,9 @@ const Register = () => {
           placeholder="Enter your password"
         />
       </div>
-      <button onClick={handleRegister}>Register</button>
+      <button onClick={handleLogin}>Login</button>
       <p>
-        Already have an account? <Link to="/login">Login</Link>
+        don't have an account? <Link to="/">register</Link>
       </p>
     </div>
   );
